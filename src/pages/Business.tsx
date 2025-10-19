@@ -25,7 +25,7 @@ const Business = () => {
             <li><strong className="text-foreground">Search-as-a-Service</strong> - We search. You pay. It's that simple.</li>
             <li><strong className="text-foreground">AI Integration</strong> - Powered by vibes and whatever model we could afford this month</li>
             <li><strong className="text-foreground">24/7 Support</strong> - Our answering machine is very reliable</li>
-            <li><strong className="text-foreground">Enterprise Security</strong> - We use the same password for everything: "password123!"</li>
+            <li><strong className="text-foreground">Enterprise Security</strong> - We use the same password for everything: "123" or "1234"</li>
             <li><strong className="text-foreground">Scalability</strong> - We can scale from 5 users to 6 users with minimal downtime</li>
           </ul>
           
@@ -45,16 +45,16 @@ const Business = () => {
               <p>"We accidentally signed up thinking this was Google. We're still here though." - Anonymous</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-primary mb-2">Mom's Coffee Shop</h3>
-              <p>"My son built this. I'm very proud!" - Definitely not Sriram's mom</p>
+              <h3 className="text-lg font-semibold text-primary mb-2">Unlimited Money Corporation PVT LTD.</h3>
+              <p>"Search Verse found our money!" - John Johnson, CEO UMC group.</p>
             </div>
           </div>
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Get In Touch</h2>
           <p>
-            Email us at: business@searchverse.definitely-real-domain.com
+            Email us at: sriramramnath2011@gmail.com
             <br />
-            <span className="text-sm">(We'll get back to you within 3-5 business years)</span>
+            <span className="text-sm">(We'll get back to you within 3-5 business years (or) decades)</span>
           </p>
         </div>
       </div>
