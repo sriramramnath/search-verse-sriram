@@ -1,9 +1,7 @@
 import { ArrowLeft, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Terms = () => {
-  return (
-    <div className="min-h-screen bg-background dark text-foreground">
+  return <div className="min-h-screen bg-background dark text-foreground">
       <div className="max-w-4xl mx-auto px-8 py-16">
         <Link to="/" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
@@ -42,7 +40,7 @@ const Terms = () => {
             <li>Use our service to search for how to break these terms (we see you)</li>
             <li>Attempt to hack us (we're not worth it, trust us)</li>
             <li>Spam our servers (they're already slow enough)</li>
-            <li>Blame us for your questionable search history</li>
+            
             <li>Expect customer service (see section 47, subsection B, paragraph... just kidding, there is no section 47)</li>
           </ul>
           
@@ -106,8 +104,6 @@ const Terms = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Terms;
