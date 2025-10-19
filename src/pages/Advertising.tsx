@@ -39,7 +39,7 @@ const Advertising = () => {
             </div>
             
             <div className="border border-border rounded-lg p-6 bg-card">
-              <h3 className="text-xl font-semibold text-primary mb-2">Enterprise Package - Your Firstborn</h3>
+              <h3 className="text-xl font-semibold text-primary mb-2">Enterprise Package - 78% of your company</h3>
               <p>We'll think about it. Maybe send you a postcard. No guarantees.</p>
             </div>
           </div>
