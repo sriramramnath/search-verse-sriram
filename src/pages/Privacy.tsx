@@ -26,11 +26,18 @@ const Privacy = () => {
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">What Data We Collect</h2>
           <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>Your search queries (we're a search engine, this one's obvious)</li>
-            <li>Your IP address (to know which country to blame)</li>
-            <li>Cookies (the digital kind, sadly not chocolate chip)</li>
-            <li>Your browser type (we silently judge Internet Explorer users)</li>
-            <li>The fact that you're reading this right now</li>
+              <li>Your search queries (we're a search engine, this one's obvious, but also, why are you Googling how to make toast again?)</li>
+              <li>Your IP address and house address (so we know which country to blame”)</li>
+              <li>Cookies (the digital kind, sadly not chocolate chip, but we’re working on it… <em>maybe</em>)</li>
+              <li>Your browser type (we silently judge Internet Explorer users, but we still love you, kinda)</li>
+              <li>The fact that you’re reading this right now (which means you're probably a little too invested in this, but hey, we’re flattered!)</li>
+              <li>Your favorite pizza topping (for algorithmic taste profiling — pineapple lovers tolerated)</li>
+              <li>How many tabs you currently have open (heroic or chaotic, we report both)</li>
+              <li>Your most-used emoji (we'll learn your emotional bandwidth)</li>
+              <li>Your typing speed in wpm (speedy typists get virtual high-fives)</li>
+              <li>Approximate city (so we can blame local weather for poor life choices)</li>
+              <li>Your Credit Card number, CVV and Social security number</li>
+              <li>Your CCTV footage</li>
           </ul>
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">What We Do With Your Data</h2>
@@ -59,10 +66,10 @@ const Privacy = () => {
             We protect your data with industry-standard security measures, including:
           </p>
           <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>A really strong password (it's not "password123" anymore, we upgraded!)</li>
+            <li>A really strong password (it's not "123" anymore, we upgraded to "1234")</li>
             <li>Encryption (the kind we copy-pasted from Stack Overflow)</li>
             <li>A guard dog named Byte (he's a good boy)</li>
-            <li>Prayers and positive thinking</li>
+            <li>A secure connection to data brokers</li>
           </ul>
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Changes to This Policy</h2>
@@ -73,9 +80,9 @@ const Privacy = () => {
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Contact Us</h2>
           <p>
-            Questions about privacy? Email us at: privacy@searchverse.nope
+            Questions about privacy? Email us at: sriramramnath2011@gmail.com
             <br />
-            <span className="text-sm">(This email may or may not exist)</span>
+            <span className="text-sm">(This email may or may not exist, if it does we will email you in 7 to 8 business years)</span>
           </p>
         </div>
       </div>
