@@ -91,15 +91,15 @@ const Terms = () => {
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">10. Contact</h2>
           <p>
-            Have questions about these terms? Email us at: legal@searchverse.fake
+            Have questions about these terms? Email us at: sriramramnath2011@gmail.com
             <br />
-            <span className="text-sm">(Responses delivered via carrier pigeon, please allow 6-8 weeks)</span>
+            <span className="text-sm">(Responses delivered via carrier pigeon, please allow 6-8 business years)</span>
           </p>
           
           <div className="border-t border-border mt-12 pt-6">
             <p className="text-sm text-center">
               By scrolling this far, you've demonstrated more dedication to reading Terms of Service than 99% of internet users. 
-              Congratulations! Your prize is... nothing. But we appreciate you. ❤️
+              Congratulations! Your prize is... nothing. But we appreciate you, BTW we sell your data to whoever makes the best hashbrowns.
             </p>
           </div>
         </div>
