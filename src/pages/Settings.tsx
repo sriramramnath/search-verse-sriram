@@ -93,7 +93,7 @@ const Settings = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-foreground font-medium">Data Collection</p>
-                    <p className="text-sm">We collect dust, mostly</p>
+                    <p className="text-sm">We collect dust, mostly but we do sell the data to whoever makes the best hashbrowns</p>
                   </div>
                   <div className="px-4 py-2 bg-primary text-primary-foreground rounded">Minimal</div>
                 </div>
@@ -135,7 +135,7 @@ const Settings = () => {
                 <div className="flex items-center justify-between opacity-50">
                   <div>
                     <p className="text-foreground font-medium">Account</p>
-                    <p className="text-sm">We don't have accounts. You're free! Like a bird! 🐦</p>
+                    <p className="text-sm">We don't have accounts. You're free! Like a bird! </p>
                   </div>
                   <div className="px-4 py-2 bg-muted text-muted-foreground rounded">N/A</div>
                 </div>
