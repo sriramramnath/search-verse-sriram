@@ -19,29 +19,26 @@ const About = () => {
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Our Mission</h2>
           <p>
-            To organize the world's information and make it universally accessible... or at least the 0.003% of it we've actually indexed. 
-            We're basically a search engine with commitment issues.
+            To make a lot of money.
           </p>
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Our Story</h2>
           <p>
-            Founded in a garage (classic), by Sriram Dev Inc., Search Verse was born from a simple question: 
-            "What if Google, but edgier?" After several failed attempts and questionable life choices, here we are.
+            Founded by Sriram, and vibe coded in 10 mins.
           </p>
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Our Team</h2>
           <p>
-            We have a world-class team of... well, mostly one person and several rubber ducks for debugging. 
-            But those rubber ducks are really good at their job.
+            We have a world-class team of... well, mostly one person and several AI models for debugging. 
           </p>
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Why Choose Us?</h2>
           <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>We're powered by unduck (because regular ducks are too mainstream)</li>
-            <li>Our AI assistant runs on optimism and caffeine</li>
+            <li>We're powered by unduck (because Duck Duck Go is very bad)</li>
+            <li>Our AI assistant runs on the greatest ai model GPT-5</li>
             <li>100% dark mode, 0% apologies</li>
-            <li>Red accents that scream "I'm different!"</li>
-            <li>Footer jokes that your grandma would find questionable</li>
+            <li>Red accents that scream "I'm different!(thanks Steve Jobs for the "Think Different" idea)</li>
+            <li>Many many Rick rolls</li>
           </ul>
         </div>
       </div>
