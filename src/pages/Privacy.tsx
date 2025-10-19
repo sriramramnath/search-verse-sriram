@@ -43,7 +43,7 @@ const Privacy = () => {
           <h2 className="text-2xl font-semibold text-foreground mt-8">What We Do With Your Data</h2>
           <p>
             Honestly? Not much. We store it on a server somewhere (probably in the cloud, it's definitely cloudy up there).
-            We promise not to sell it to anyone unless they offer us pizza. Good pizza, mind you. Not that cheap stuff.
+            We promise not to sell it to anyone unless they offer us hashbrowns. Good hashbrowns, mind you. Not that cheap stuff.
           </p>
           
           <h2 className="text-2xl font-semibold text-foreground mt-8">Your Rights</h2>
