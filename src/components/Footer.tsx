@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-
 export const Footer = () => {
-  return (
-    <footer className="absolute bottom-0 left-0 right-0 bg-card border-t border-border">
+  return <footer className="absolute bottom-0 left-0 right-0 bg-card border-t border-border">
       <div className="px-8 py-4">
         <div className="flex flex-wrap justify-between items-center text-sm gap-6">
           <div className="flex gap-8">
@@ -16,9 +14,7 @@ export const Footer = () => {
               Business
             </Link>
           </div>
-          <div className="text-xs text-muted-foreground">
-            © 2025 Sriram Dev Inc. • Built with questionable amounts of caffeine
-          </div>
+          
           <div className="flex gap-8">
             <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors" title="We barely read it ourselves">
               Privacy
@@ -32,6 +28,5 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
