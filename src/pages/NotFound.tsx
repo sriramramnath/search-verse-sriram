@@ -1,23 +1,24 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 const NotFound = () => {
   const location = useLocation();
-  const [joke, setJoke] = useState(null);
-  const [dogImage, setDogImage] = useState(null);
+  const [joke, setJoke] = useState<string | null>(null);
+  const [dogImage, setDogImage] = useState<string | null>(null);
 
   // Fetch a random computer science joke and dog image
   useEffect(() => {
     const fetchJokeAndDogImage = async () => {
       try {
         // Fetching a random computer science joke
-        const jokeResponse = await axios.get("https://v2.jokeapi.dev/joke/Programming?type=single");
-        setJoke(jokeResponse.data.joke);
+        const jokeResponse = await fetch("https://v2.jokeapi.dev/joke/Programming?type=single");
+        const jokeData = await jokeResponse.json();
+        setJoke(jokeData.joke);
 
         // Fetching a random dog image
-        const dogResponse = await axios.get("https://dog.ceo/api/breeds/image/random");
-        setDogImage(dogResponse.data.message);  // Dog image URL
+        const dogResponse = await fetch("https://dog.ceo/api/breeds/image/random");
+        const dogData = await dogResponse.json();
+        setDogImage(dogData.message);  // Dog image URL
       } catch (error) {
         console.error("Error fetching joke or dog image:", error);
       }
