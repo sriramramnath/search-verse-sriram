@@ -25,29 +25,6 @@ const Index = () => {
             <StockWidget />
             <JokeWidget />
             <QuickLinks />
-            
-            {/* Fun Stats Widget */}
-            <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-all">
-              <h2 className="text-lg font-semibold mb-4">Today's Stats</h2>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Coffee consumed:</span>
-                  <span className="font-semibold text-primary">∞</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Bugs fixed:</span>
-                  <span className="font-semibold">12</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Bugs created:</span>
-                  <span className="font-semibold">47</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Stack Overflow visits:</span>
-                  <span className="font-semibold">420</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </main>

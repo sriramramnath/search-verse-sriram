@@ -1,43 +1,78 @@
-import { Smile } from "lucide-react";
-import { useState } from "react";
+import { Smile, Loader2, RefreshCw } from "lucide-react";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 
-const jokes = [
-  "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
-  "I would tell you a UDP joke, but you might not get it. 📡",
-  "There are 10 types of people in the world: those who understand binary and those who don't. 💻",
-  "Why did the developer go broke? Because he used up all his cache! 💸",
-  "How many programmers does it take to change a light bulb? None, that's a hardware problem. 💡",
-  "A SQL query walks into a bar, walks up to two tables and asks... 'Can I JOIN you?' 🍺",
-  "Why do Java developers wear glasses? Because they don't C#! 👓",
-  "What's a programmer's favorite hangout place? Foo Bar! 🍻",
-];
+interface JokeData {
+  setup?: string;
+  delivery?: string;
+  joke?: string;
+  category: string;
+}
 
 export const JokeWidget = () => {
-  const [joke, setJoke] = useState(jokes[Math.floor(Math.random() * jokes.length)]);
+  const [joke, setJoke] = useState<JokeData | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  const getNewJoke = () => {
-    let newJoke;
-    do {
-      newJoke = jokes[Math.floor(Math.random() * jokes.length)];
-    } while (newJoke === joke && jokes.length > 1);
-    setJoke(newJoke);
+  const fetchJoke = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(
+        "https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit"
+      );
+      const data = await response.json();
+      setJoke(data);
+    } catch (err) {
+      // Fallback joke if API fails
+      setJoke({
+        joke: "Why do programmers prefer dark mode? Because light attracts bugs!",
+        category: "Programming",
+      });
+    }
+    setLoading(false);
   };
+
+  useEffect(() => {
+    fetchJoke();
+  }, []);
 
   return (
     <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-all">
-      <div className="flex items-center gap-2 mb-4">
-        <Smile className="w-5 h-5 text-primary" />
-        <h2 className="text-lg font-semibold">Daily Joke</h2>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <Smile className="w-5 h-5 text-primary" />
+          <h2 className="text-lg font-semibold">Joke of the Moment</h2>
+        </div>
+        {joke && (
+          <span className="text-xs text-muted-foreground bg-background px-2 py-1 rounded">
+            {joke.category}
+          </span>
+        )}
       </div>
       <div className="space-y-4">
-        <p className="text-foreground leading-relaxed min-h-[60px]">{joke}</p>
-        <Button 
-          onClick={getNewJoke} 
-          variant="outline" 
-          className="w-full border-primary/30 hover:border-primary hover:bg-primary/10"
+        {loading ? (
+          <div className="flex items-center justify-center min-h-[80px]">
+            <Loader2 className="w-6 h-6 text-primary animate-spin" />
+          </div>
+        ) : (
+          <div className="min-h-[80px] flex items-center">
+            {joke?.setup ? (
+              <div className="space-y-2">
+                <p className="text-foreground leading-relaxed">{joke.setup}</p>
+                <p className="text-foreground font-medium leading-relaxed">{joke.delivery}</p>
+              </div>
+            ) : (
+              <p className="text-foreground leading-relaxed">{joke?.joke}</p>
+            )}
+          </div>
+        )}
+        <Button
+          onClick={fetchJoke}
+          variant="outline"
+          className="w-full border-primary/30 hover:border-primary hover:bg-primary/10 group"
+          disabled={loading}
         >
-          Tell Me Another
+          <RefreshCw className="w-4 h-4 mr-2 group-hover:rotate-180 transition-transform duration-500" />
+          New Joke
         </Button>
       </div>
     </div>
