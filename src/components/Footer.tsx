@@ -1,32 +1,38 @@
 import { Link } from "react-router-dom";
+
 export const Footer = () => {
-  return <footer className="absolute bottom-0 left-0 right-0 bg-card border-t border-border">
-      <div className="px-8 py-4">
-        <div className="flex flex-wrap justify-between items-center text-sm gap-6">
-          <div className="flex gap-8">
-            <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors" title="We're definitely not evil">
-              About
-            </Link>
-            <Link to="/advertising" className="text-muted-foreground hover:text-primary transition-colors" title="We'll sell ads... eventually">
-              Advertising
-            </Link>
-            <Link to="/business" className="text-muted-foreground hover:text-primary transition-colors" title="Enterprise solutions from a garage">
-              Business
-            </Link>
-          </div>
-          
-          <div className="flex gap-8">
-            <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors" title="We barely read it ourselves">
-              Privacy
-            </Link>
-            <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors" title="Written by an AI lawyer">
-              Terms
-            </Link>
-            <Link to="/settings" className="text-muted-foreground hover:text-primary transition-colors" title="There's only dark mode">
-              Settings
-            </Link>
-          </div>
+  return (
+    <footer className="fixed bottom-0 left-0 right-0 w-full border-t border-border bg-card/95 backdrop-blur-sm py-3 z-50">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-muted-foreground">
+          <Link to="/about" className="hover:text-primary transition-colors">
+            About
+          </Link>
+          <span className="text-border">|</span>
+          <Link to="/advertising" className="hover:text-primary transition-colors">
+            Advertising
+          </Link>
+          <span className="text-border">|</span>
+          <Link to="/business" className="hover:text-primary transition-colors">
+            Business
+          </Link>
+          <span className="text-border">|</span>
+          <Link to="/privacy" className="hover:text-primary transition-colors">
+            Privacy
+          </Link>
+          <span className="text-border">|</span>
+          <Link to="/terms" className="hover:text-primary transition-colors">
+            Terms
+          </Link>
+          <span className="text-border">|</span>
+          <Link to="/settings" className="hover:text-primary transition-colors">
+            Settings
+          </Link>
+        </div>
+        <div className="text-center mt-2 text-xs text-muted-foreground/60">
+          © {new Date().getFullYear()} Sriram Dev Inc.
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
