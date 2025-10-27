@@ -9,8 +9,8 @@ const links = [
 
 export const QuickLinks = () => {
   return (
-    <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-all">
-      <h2 className="text-lg font-semibold mb-4">Quick Links</h2>
+    <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-all shadow-lg">
+      <h2 className="text-lg font-semibold mb-6">Quick Links</h2>
       <div className="grid grid-cols-2 gap-4">
         {links.map((link) => {
           const Icon = link.icon;

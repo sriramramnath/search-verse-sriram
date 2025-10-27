@@ -30,10 +30,10 @@ export const TradingViewNews = () => {
   }, []);
 
   return (
-    <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all">
-      <div className="flex items-center gap-2 p-4 border-b border-border">
+    <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all shadow-lg">
+      <div className="flex items-center gap-2 p-6 border-b border-border">
         <Newspaper className="w-5 h-5 text-primary" />
-        <h2 className="text-lg font-semibold">Top Stories</h2>
+        <h2 className="text-lg font-semibold">Market News</h2>
       </div>
       <div className="tradingview-widget-container">
         <div ref={containerRef} className="tradingview-widget-container__widget" />

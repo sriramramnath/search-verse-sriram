@@ -23,7 +23,7 @@ export const TradingViewStockChart = () => {
       locale: "en",
       save_image: true,
       style: "1",
-      symbol: "NASDAQ:AAPL",
+      symbol: "SP:SPX",
       theme: "dark",
       timezone: "Etc/UTC",
       backgroundColor: "#0F0F0F",
@@ -45,10 +45,10 @@ export const TradingViewStockChart = () => {
   }, []);
 
   return (
-    <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all">
-      <div className="flex items-center gap-2 p-4 border-b border-border">
+    <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all shadow-lg">
+      <div className="flex items-center gap-2 p-6 border-b border-border">
         <TrendingUp className="w-5 h-5 text-primary" />
-        <h2 className="text-lg font-semibold">Market Chart</h2>
+        <h2 className="text-lg font-semibold">S&P 500 Chart</h2>
       </div>
       <div className="tradingview-widget-container" style={{ height: "500px", width: "100%" }}>
         <div

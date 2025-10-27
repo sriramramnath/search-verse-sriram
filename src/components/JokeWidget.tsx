@@ -36,11 +36,11 @@ export const JokeWidget = () => {
   }, []);
 
   return (
-    <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-all">
-      <div className="flex items-center justify-between mb-4">
+    <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-all shadow-lg">
+      <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
           <Smile className="w-5 h-5 text-primary" />
-          <h2 className="text-lg font-semibold">Joke of the Moment</h2>
+          <h2 className="text-lg font-semibold">Daily Joke</h2>
         </div>
         {joke && (
           <span className="text-xs text-muted-foreground bg-background px-2 py-1 rounded">
