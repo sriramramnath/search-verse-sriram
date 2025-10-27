@@ -6,6 +6,8 @@ import { TradingViewStockChart } from "@/components/TradingViewStockChart";
 import { TradingViewNews } from "@/components/TradingViewNews";
 import { JokeWidget } from "@/components/JokeWidget";
 import { QuickLinks } from "@/components/QuickLinks";
+import { MusicWidget } from "@/components/MusicWidget";
+import { CurrencyWidget } from "@/components/CurrencyWidget";
 
 const Index = () => {
   return (
@@ -23,6 +25,12 @@ const Index = () => {
             <TimeWeatherWidget />
             <JokeWidget />
             <QuickLinks />
+          </div>
+
+          {/* Music and Currency Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <MusicWidget />
+            <CurrencyWidget />
           </div>
 
           {/* Market and News Section */}
